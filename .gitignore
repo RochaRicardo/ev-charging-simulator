@@ -1,0 +1,17 @@
+# Dependências locais
+node_modules/
+
+# Ficheiros de ambiente
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Sensível
+*.key

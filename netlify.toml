@@ -1,0 +1,21 @@
+# Build configuration for Netlify
+# The site is a static site — Netlify just serves the files as-is.
+
+[build]
+  publish = "."
+
+[build.processing.minify]
+  html = true
+  css = true
+  js = true
+
+[build.processing.minify.js]
+  comments = false
+
+[headers]
+  "/styles.css" = [
+    "Cache-Control: public, max-age=31536000, immutable"
+  ]
+  "/app.js" = [
+    "Cache-Control: public, max-age=31536000, immutable"
+  ]
